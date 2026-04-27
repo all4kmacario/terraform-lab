@@ -1,34 +1,18 @@
-# Terraform local directories
+# Terraform
 .terraform/
-
-# Terraform state files
 *.tfstate
 *.tfstate.*
-
-# Terraform variable files that may contain secrets
-*.tfvars
-*.tfvars.json
-
-# Crash logs
 crash.log
 crash.*.log
 
-# Override files
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
+# Sensitive variable values
+*.tfvars
+*.tfvars.json
 
-# CLI config
-.terraformrc
-terraform.rc
+# Keep examples
+!*.tfvars.example
 
-# Terraform lock file
-# Usually commit this for provider version consistency.
-# Uncomment the next line only if you intentionally do NOT want to track it.
-# .terraform.lock.hcl
-
-# OS/editor files
+# OS/editor
 .DS_Store
 Thumbs.db
 .vscode/
